@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — AngkaNusa</title>
+<meta name="description" content="Indonesia's economy in official figures: GDP growth, poverty, unemployment and inflation series, what the country makes, and what it trades.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-name">AngkaNusa</span>
+      <span class="brand-tag">Indonesia in numbers — the republic, measured</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Overview</a>
+      <a href="people.html">People</a>
+      <a href="economy.html" aria-current="page">Economy</a>
+      <a href="land.html">Land &amp; Sea</a>
+      <a href="provinces.html">Provinces</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Economy: <span class="accent">Rp 22,139 trillion</span> of output</h1>
+    <p class="lede">Southeast Asia's largest economy grew 5.03% in 2024. Below, one chart carries
+    four official series — growth, poverty, unemployment and inflation. Use the buttons to switch;
+    the chart, its reading and its source line all change with the series.</p>
+  </div>
+
+  <section class="block" aria-labelledby="series-h">
+    <h2 id="series-h">Four series, one chart</h2>
+    <div class="panel">
+      <div class="controls" role="group" aria-label="Choose a series">
+        <button type="button" data-series="growth" aria-pressed="true">GDP growth</button>
+        <button type="button" data-series="poverty" aria-pressed="false">Poverty rate</button>
+        <button type="button" data-series="unemployment" aria-pressed="false">Unemployment</button>
+        <button type="button" data-series="inflation" aria-pressed="false">Inflation</button>
+      </div>
+      <h3 id="series-title">GDP growth</h3>
+      <p class="panel-note" id="series-reading"></p>
+      <div id="series-chart"></div>
+      <p class="source" id="series-source"></p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="makes-h">
+    <h2 id="makes-h">What the economy makes</h2>
+    <p>Manufacturing is the largest single industry, but no industry dominates: farming, trade,
+    building and mining together outweigh it, and a third of output is spread across transport,
+    finance, public services and everything else.</p>
+    <div class="panel">
+      <h3>Share of GDP by industry, 2024, percent</h3>
+      <div id="sector-chart"></div>
+      <p class="source">BPS, national accounts 2024</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="trade-h">
+    <h2 id="trade-h">The economy in figures</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-label">GDP per person</div>
+        <div class="card-value">Rp 78.6 million</div>
+        <p class="card-note">About US$4,960 at 2024 average exchange rates.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Exports of goods</div>
+        <div class="card-value">US$264.7 billion</div>
+        <p class="card-note">Coal, palm oil, iron and steel, gas and nickel products lead.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Imports of goods</div>
+        <div class="card-value">US$233.7 billion</div>
+        <p class="card-note">Machinery, fuel and raw materials for industry lead.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Trade surplus</div>
+        <div class="card-value">US$31.0 billion</div>
+        <p class="card-note">Goods exports over goods imports, 2024.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Human development</div>
+        <div class="card-value">74.4 of 100</div>
+        <p class="card-note">Human Development Index — in the "high" band and rising.</p>
+        <p class="source">BPS, 2023</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Poverty, latest</div>
+        <div class="card-value">8.57%</div>
+        <p class="card-note">24.06 million people, September 2024 — the lowest recorded.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="story-h">
+    <h2 id="story-h">The story the series tell</h2>
+    <p>Switch the chart above to GDP growth and the pandemic is unmistakable: −2.07% in 2020, the
+    only contraction in the series, then a return to the five-percent path Indonesia has held for a
+    decade. The poverty series shows the same shock in slower motion — a rise to 10.14% by March
+    2021, then a steady fall to record lows. Inflation spiked to 5.51% in 2022 as fuel prices were
+    adjusted, and by December 2024 it was 1.57%, the gentlest in the series.</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <p>BPS — Statistics Indonesia (national accounts, poverty and labour force releases, consumer
+    price index, foreign trade statistics, Human Development Index).</p>
+    <p><a href="index.html">Back to the overview</a></p>
+  </div>
+</footer>
+
+<script type="module" src="economy.js"></script>
+</body>
+</html>

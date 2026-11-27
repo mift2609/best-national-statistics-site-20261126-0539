@@ -1,0 +1,6 @@
+[
+  { "file": "1-home.jpg", "path": "index.html", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "2-economy.jpg", "path": "economy.html", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "3-provinces.jpg", "path": "provinces.html", "viewport": { "width": 1280, "height": 800 } },
+  { "file": "4-people-phone.jpg", "path": "people.html", "viewport": { "width": 390, "height": 844 } }
+]

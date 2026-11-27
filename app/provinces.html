@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provinces — AngkaNusa</title>
+<meta name="description" content="All 38 Indonesian provinces and their capitals in a searchable, sortable table, plus the ten most populous provinces.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-name">AngkaNusa</span>
+      <span class="brand-tag">Indonesia in numbers — the republic, measured</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Overview</a>
+      <a href="people.html">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="land.html">Land &amp; Sea</a>
+      <a href="provinces.html" aria-current="page">Provinces</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Provinces: <span class="accent">38</span> and counting</h1>
+    <p class="lede">Indonesia began with a handful of provinces and has divided them ever since —
+    most recently in 2022, when Papua became five provinces. West Java alone holds more people
+    than the twenty smallest provinces combined.</p>
+  </div>
+
+  <section class="block" aria-labelledby="largest-h">
+    <h2 id="largest-h">The ten largest provinces</h2>
+    <p>By population, mid-2024 estimates. The three Javanese provinces at the top hold 130 million
+    people between them — nearly half the country.</p>
+    <div class="panel">
+      <h3>Population of the ten largest provinces, millions, 2024</h3>
+      <div id="largest-chart"></div>
+      <p class="source">BPS, mid-2024 population estimates</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="all-h">
+    <h2 id="all-h">All 38 provinces</h2>
+    <p>Search by province, capital or island region — or use the column buttons to sort the table.
+    The count under the search box always tells you how many provinces are showing.</p>
+    <label class="field" for="province-search">Search the provinces</label>
+    <input type="search" id="province-search" placeholder="Try: Papua, Makassar, Java…" autocomplete="off">
+    <p id="province-count" role="status"></p>
+    <div class="panel table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col"><button type="button" data-sort="name">Province</button></th>
+            <th scope="col"><button type="button" data-sort="capital">Capital</button></th>
+            <th scope="col"><button type="button" data-sort="region">Island region</button></th>
+          </tr>
+        </thead>
+        <tbody id="province-rows"></tbody>
+      </table>
+    </div>
+    <p class="source">Ministry of Home Affairs; capitals as of the 2022 provincial changes</p>
+  </section>
+
+  <section class="block" aria-labelledby="notes-h">
+    <h2 id="notes-h">Three provinces worth a second look</h2>
+    <p><strong>Jakarta</strong> is a province as well as the capital city: about 10.6 million
+    people in just over 660 km², the densest province by far. <strong>Yogyakarta</strong> is a
+    special region ruled in part by its sultan, who serves as governor by hereditary right.
+    <strong>Southwest Papua</strong>, created in 2022 with its capital at Sorong, is the newest of
+    the 38 — the fourth new province carved from the old Papua province that year.</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <p>Ministry of Home Affairs (province and capital list) · BPS — Statistics Indonesia (mid-2024
+    population estimates by province).</p>
+    <p><a href="index.html">Back to the overview</a></p>
+  </div>
+</footer>
+
+<script type="module" src="provinces.js"></script>
+</body>
+</html>

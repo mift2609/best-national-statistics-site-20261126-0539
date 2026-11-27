@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People — AngkaNusa</title>
+<meta name="description" content="Indonesia's population: how many people, where they live across the islands, how old they are, and how connected they are.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-name">AngkaNusa</span>
+      <span class="brand-tag">Indonesia in numbers — the republic, measured</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Overview</a>
+      <a href="people.html" aria-current="page">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="land.html">Land &amp; Sea</a>
+      <a href="provinces.html">Provinces</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>People: <span class="accent">281.6 million</span>, unevenly spread</h1>
+    <p class="lede">Indonesia is the world's fourth most populous country — but more than half of
+    everyone lives on one island, Java, which holds less than a tenth of the land. This page is
+    about where people are, and what they are like in aggregate.</p>
+  </div>
+
+  <section class="block" aria-labelledby="where-h">
+    <h2 id="where-h">Where people live</h2>
+    <p>The 2020 census counted 270.2 million people. Java's 151.6 million make it one of the most
+    populous islands on Earth; the two eastern island groups together hold fewer people than the
+    single province of East Java.</p>
+    <div class="panel">
+      <h3>Population by island group, 2020 census, millions</h3>
+      <div id="island-chart"></div>
+      <div id="island-share"></div>
+      <div class="legend" id="island-legend" aria-label="Share bar legend"></div>
+      <p class="source">BPS, 2020 population census</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="profile-h">
+    <h2 id="profile-h">The population in profile</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-label">Density</div>
+        <div class="card-value">148 people / km²</div>
+        <p class="card-note">National average — Java is far denser, Papua far emptier.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Living on Java</div>
+        <div class="card-value">56.1%</div>
+        <p class="card-note">Share of the whole population on one island group.</p>
+        <p class="source">BPS, 2020 census</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Urban share</div>
+        <div class="card-value">58.6%</div>
+        <p class="card-note">Live in urban areas; the share rises every year.</p>
+        <p class="source">World Bank, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Median age</div>
+        <div class="card-value">30.7 years</div>
+        <p class="card-note">Half the population is younger than this.</p>
+        <p class="source">BPS estimate, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Children per woman</div>
+        <div class="card-value">2.1</div>
+        <p class="card-note">Total fertility rate — near replacement level.</p>
+        <p class="source">BPS, 2023</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Life expectancy</div>
+        <div class="card-value">72.4 years</div>
+        <p class="card-note">Expected years of life at birth.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Literacy, age 15+</div>
+        <div class="card-value">96.0%</div>
+        <p class="card-note">Can read and write a simple sentence.</p>
+        <p class="source">BPS, 2023</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Years of schooling</div>
+        <div class="card-value">9.2 years</div>
+        <p class="card-note">Mean years completed by adults aged 25 and over.</p>
+        <p class="source">BPS, 2024</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Internet users</div>
+        <div class="card-value">221.6 million</div>
+        <p class="card-note">79.5% of the population was online in 2024.</p>
+        <p class="source">APJII survey, 2024</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="reading-h">
+    <h2 id="reading-h">Reading the profile</h2>
+    <p>Three numbers explain much of the rest of this site. A fertility rate of about 2.1 means the
+    population is still growing — people live longer and past generations were large — but the
+    growth the Overview chart shows is bending: BPS projects the count to peak later this century.
+    A median age of 30.7 makes Indonesia young beside Japan or Europe, which is why jobs and
+    schooling dominate its politics. And a 58.6% urban share, climbing steadily, is why the
+    Provinces page is topped by the great Javanese provinces and their cities.</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <p>BPS — Statistics Indonesia (2020 census, population estimates, social statistics) · World Bank
+    World Development Indicators (urban population share) · APJII — Indonesian Internet Service
+    Providers Association (internet penetration survey, 2024).</p>
+    <p><a href="index.html">Back to the overview</a></p>
+  </div>
+</footer>
+
+<script type="module" src="people.js"></script>
+</body>
+</html>

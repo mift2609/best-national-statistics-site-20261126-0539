@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Land &amp; Sea — AngkaNusa</title>
+<meta name="description" content="Indonesia's land and sea in figures: area, coastline, volcanoes, forests, rivers and peaks, plus live clocks for its three time zones.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-name">AngkaNusa</span>
+      <span class="brand-tag">Indonesia in numbers — the republic, measured</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Overview</a>
+      <a href="people.html">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="land.html" aria-current="page">Land &amp; Sea</a>
+      <a href="provinces.html">Provinces</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Land &amp; sea: an archipelago <span class="accent">on the equator</span></h1>
+    <p class="lede">Indonesia straddles the equator for more than 5,000 kilometres — wide enough
+    that when Jakarta sits down to lunch, Papua is already mid-afternoon. These are the measures
+    of the place itself.</p>
+  </div>
+
+  <section class="block" aria-labelledby="zones-h">
+    <h2 id="zones-h">Three time zones, right now</h2>
+    <p>The clocks below are live: they read your device's clock and show it in Western, Central
+    and Eastern Indonesian Time.</p>
+    <div class="clocks">
+      <div class="clock">
+        <div class="clock-zone">Western · WIB · UTC+7</div>
+        <div class="clock-time" id="clock-wib">--:--:--</div>
+        <div>Sumatra, Java, West &amp; Central Kalimantan</div>
+      </div>
+      <div class="clock">
+        <div class="clock-zone">Central · WITA · UTC+8</div>
+        <div class="clock-time" id="clock-wita">--:--:--</div>
+        <div>Bali, Sulawesi, East &amp; South Kalimantan, Nusa Tenggara</div>
+      </div>
+      <div class="clock">
+        <div class="clock-zone">Eastern · WIT · UTC+9</div>
+        <div class="clock-time" id="clock-wit">--:--:--</div>
+        <div>Maluku and Papua</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="measures-h">
+    <h2 id="measures-h">The measures of the country</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="card-label">Land area</div>
+        <div class="card-value">1,904,569 km²</div>
+        <p class="card-note">The 14th largest country in the world by land.</p>
+        <p class="source">Geospatial Information Agency</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Coastline</div>
+        <div class="card-value">108,000 km</div>
+        <p class="card-note">Among the longest coastlines of any country.</p>
+        <p class="source">Geospatial Information Agency</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Highest point</div>
+        <div class="card-value">Puncak Jaya, 4,884 m</div>
+        <p class="card-note">A glacier-capped peak in Highland Papua.</p>
+        <p class="source">Geospatial Information Agency</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Largest lake</div>
+        <div class="card-value">Lake Toba, ~1,130 km²</div>
+        <p class="card-note">A volcanic caldera lake in North Sumatra.</p>
+        <p class="source">Geospatial Information Agency</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Longest river</div>
+        <div class="card-value">Kapuas, 1,143 km</div>
+        <p class="card-note">Flows across West Kalimantan to the Karimata Strait.</p>
+        <p class="source">Geospatial Information Agency</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Active volcanoes</div>
+        <div class="card-value">127</div>
+        <p class="card-note">More active volcanoes than any other country.</p>
+        <p class="source">PVMBG volcanology agency</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Forest cover</div>
+        <div class="card-value">95.9 million ha</div>
+        <p class="card-note">About 51% of the land area is forested.</p>
+        <p class="source">Ministry of Environment and Forestry, 2023</p>
+      </article>
+      <article class="card">
+        <div class="card-label">Named islands</div>
+        <div class="card-value">17,001</div>
+        <p class="card-note">Named and verified; only about 6,000 are inhabited.</p>
+        <p class="source">Geospatial Information Agency, 2023</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="cultures-h">
+    <h2 id="cultures-h">One country, many peoples</h2>
+    <p>The 2010 census classified <strong>1,340 ethnic groups</strong> across the archipelago, and
+    the language agency counts <strong>718 living local languages</strong> alongside the national
+    language, Indonesian. That variety is also an attraction: <strong>13.9 million international
+    visitors</strong> arrived in 2024.</p>
+    <p class="source">BPS 2010 census · Language Development Agency · BPS, 2024</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <p>Geospatial Information Agency (area, coastline, islands, elevations) · PVMBG — Center for
+    Volcanology and Geological Hazard Mitigation · Ministry of Environment and Forestry (forest
+    statistics) · BPS — Statistics Indonesia (census ethnic classification, visitor arrivals).</p>
+    <p><a href="index.html">Back to the overview</a></p>
+  </div>
+</footer>
+
+<script type="module" src="land.js"></script>
+</body>
+</html>

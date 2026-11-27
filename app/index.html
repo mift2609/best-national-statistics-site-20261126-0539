@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AngkaNusa — Indonesia in Numbers</title>
+<meta name="description" content="AngkaNusa presents Indonesia's national statistics: population, economy, land and provinces, every figure with its source and year.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-name">AngkaNusa</span>
+      <span class="brand-tag">Indonesia in numbers — the republic, measured</span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Overview</a>
+      <a href="people.html">People</a>
+      <a href="economy.html">Economy</a>
+      <a href="land.html">Land &amp; Sea</a>
+      <a href="provinces.html">Provinces</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>A nation of 17,000 islands,<br>counted <span class="accent">one figure at a time</span>.</h1>
+    <p class="lede">AngkaNusa gathers Indonesia's official statistics in one place — how many people
+    live here, what the economy makes, how the land is shaped — and prints the source and year
+    beside every number, so you can check anything we say.</p>
+    <p class="big-number">284.4 million</p>
+    <p class="big-note">people called Indonesia home in mid-2025, the world's fourth-largest population.
+    <span class="source">BPS population estimate, 2025</span></p>
+  </div>
+
+  <section class="block" aria-labelledby="headlines-h">
+    <h2 id="headlines-h">The country at a glance</h2>
+    <p>The eight figures most visitors come for. Each card names where the number comes from.</p>
+    <div class="cards" id="headline-cards"></div>
+  </section>
+
+  <section class="block" aria-labelledby="growth-h">
+    <h2 id="growth-h">Fifty years of growth</h2>
+    <p>Every ten years since 1971 a census has counted everyone in the archipelago. The count has
+    more than doubled in fifty years — and the 2025 estimate, 284.4 million, sits above the last
+    point on this line.</p>
+    <div class="panel">
+      <h3>Population at each census, millions</h3>
+      <p class="panel-note">Censuses of 1971–2020. The line rises at every count; growth is now
+      slowing as families get smaller, a story the People page follows.</p>
+      <div id="census-chart"></div>
+      <p class="source">BPS, population censuses 1971–2020</p>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="explore-h">
+    <h2 id="explore-h">Explore the statistics</h2>
+    <div class="explore">
+      <a href="people.html">
+        <span class="explore-title">People</span>
+        <span class="explore-text">Where 281.6 million people live, how old they are, and how the
+        population spreads across the islands.</span>
+      </a>
+      <a href="economy.html">
+        <span class="explore-title">Economy</span>
+        <span class="explore-text">Growth, poverty, jobs and prices — switch between four official
+        series on one chart, back to 2015.</span>
+      </a>
+      <a href="land.html">
+        <span class="explore-title">Land &amp; Sea</span>
+        <span class="explore-text">Volcanoes, forests, the longest river and the highest peak — plus
+        live clocks for the country's three time zones.</span>
+      </a>
+      <a href="provinces.html">
+        <span class="explore-title">Provinces</span>
+        <span class="explore-text">All 38 provinces and their capitals in one searchable table, and
+        the ten provinces where most Indonesians live.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="about-h">
+    <h2 id="about-h">How to read this site</h2>
+    <p>Every figure carries its source and the year it describes, printed right beside it. Most come
+    from BPS — Statistics Indonesia, the national statistics office — and the rest from the bodies
+    named: the World Bank, the Geospatial Information Agency, the volcanology agency PVMBG and the
+    internet association APJII. Figures are rounded the way their sources publish them. Where two
+    pages could show the same number, they show the same number: the dataset behind this site is a
+    single file, so nothing can drift out of agreement with itself.</p>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <h2>Sources</h2>
+    <p>BPS — Statistics Indonesia (population censuses and estimates, national accounts, poverty and
+    labour releases, consumer prices) · World Bank World Development Indicators (urban share) ·
+    Geospatial Information Agency (islands, area, coastline) · PVMBG (volcanoes) · APJII (internet
+    use, 2024) · Ministry of Home Affairs (provinces and capitals).</p>
+    <p>AngkaNusa is an independent presentation of published statistics, not an official government
+    website. For the underlying tables, visit the sources named above.</p>
+  </div>
+</footer>
+
+<script type="module" src="home.js"></script>
+</body>
+</html>
